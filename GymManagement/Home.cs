@@ -47,7 +47,9 @@ namespace GymManagement
 
         private void btnStaff_Click(object sender, EventArgs e)
         {
-
+            Staff staff = new Staff();
+            staff.Show();
+            this.Hide();
         }
 
         private void btnLogout_Click(object sender, EventArgs e)
