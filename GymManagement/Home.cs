@@ -17,6 +17,18 @@ namespace GymManagement
             InitializeComponent();
         }
 
+        private int imageNumber = 1;
+
+        private void LoadNextImage()
+        {
+            if (imageNumber == 4)
+            {
+                imageNumber = 1;
+            }
+            slidePic.ImageLocation = string.Format(@"Images\{0}.png", imageNumber);
+            imageNumber++;
+        }
+
         private void btnCoaches_Click(object sender, EventArgs e)
         {
             Coaches coach = new Coaches();
@@ -62,6 +74,11 @@ namespace GymManagement
             {
                 Application.Exit();
             }
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            LoadNextImage();
         }
     }
 }

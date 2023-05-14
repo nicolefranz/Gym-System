@@ -32,29 +32,29 @@
             this.btnClear = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.radioButton6 = new System.Windows.Forms.RadioButton();
-            this.radioButton5 = new System.Windows.Forms.RadioButton();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radio1year = new System.Windows.Forms.RadioButton();
+            this.radio6months = new System.Windows.Forms.RadioButton();
+            this.radio3months = new System.Windows.Forms.RadioButton();
+            this.radio2months = new System.Windows.Forms.RadioButton();
+            this.radio1month = new System.Windows.Forms.RadioButton();
             this.label9 = new System.Windows.Forms.Label();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.radio1week = new System.Windows.Forms.RadioButton();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.txtAddress = new System.Windows.Forms.TextBox();
+            this.txtContact = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtLastName = new System.Windows.Forms.TextBox();
+            this.txtFirstName = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnBack = new System.Windows.Forms.Button();
             this.Logo = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.txtBirthday = new System.Windows.Forms.TextBox();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Logo)).BeginInit();
@@ -72,6 +72,7 @@
             this.btnClear.TabIndex = 8;
             this.btnClear.Text = "CLEAR";
             this.btnClear.UseVisualStyleBackColor = false;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // btnAdd
             // 
@@ -86,95 +87,90 @@
             this.btnAdd.TabIndex = 7;
             this.btnAdd.Text = "ADD MEMBER";
             this.btnAdd.UseVisualStyleBackColor = false;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Controls.Add(this.dateTimePicker1);
-            this.panel2.Controls.Add(this.radioButton6);
-            this.panel2.Controls.Add(this.radioButton5);
-            this.panel2.Controls.Add(this.radioButton4);
-            this.panel2.Controls.Add(this.radioButton3);
-            this.panel2.Controls.Add(this.radioButton2);
-            this.panel2.Controls.Add(this.label9);
-            this.panel2.Controls.Add(this.radioButton1);
-            this.panel2.Controls.Add(this.label8);
+            this.panel2.Controls.Add(this.txtBirthday);
+            this.panel2.Controls.Add(this.radio1year);
+            this.panel2.Controls.Add(this.radio6months);
+            this.panel2.Controls.Add(this.radio3months);
+            this.panel2.Controls.Add(this.txtAddress);
             this.panel2.Controls.Add(this.label7);
+            this.panel2.Controls.Add(this.radio2months);
+            this.panel2.Controls.Add(this.radio1month);
+            this.panel2.Controls.Add(this.label9);
+            this.panel2.Controls.Add(this.radio1week);
+            this.panel2.Controls.Add(this.label8);
             this.panel2.Controls.Add(this.label6);
             this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.label4);
-            this.panel2.Controls.Add(this.textBox6);
-            this.panel2.Controls.Add(this.textBox5);
-            this.panel2.Controls.Add(this.textBox3);
+            this.panel2.Controls.Add(this.txtEmail);
+            this.panel2.Controls.Add(this.txtContact);
             this.panel2.Controls.Add(this.label3);
-            this.panel2.Controls.Add(this.textBox2);
-            this.panel2.Controls.Add(this.textBox1);
+            this.panel2.Controls.Add(this.txtLastName);
+            this.panel2.Controls.Add(this.txtFirstName);
             this.panel2.Location = new System.Drawing.Point(29, 122);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(630, 266);
             this.panel2.TabIndex = 6;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
-            // dateTimePicker1
+            // radio1year
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(215, 101);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(180, 20);
-            this.dateTimePicker1.TabIndex = 24;
+            this.radio1year.AutoSize = true;
+            this.radio1year.Location = new System.Drawing.Point(439, 221);
+            this.radio1year.Name = "radio1year";
+            this.radio1year.Size = new System.Drawing.Size(54, 17);
+            this.radio1year.TabIndex = 23;
+            this.radio1year.TabStop = true;
+            this.radio1year.Text = "1 year";
+            this.radio1year.UseVisualStyleBackColor = true;
             // 
-            // radioButton6
+            // radio6months
             // 
-            this.radioButton6.AutoSize = true;
-            this.radioButton6.Location = new System.Drawing.Point(439, 221);
-            this.radioButton6.Name = "radioButton6";
-            this.radioButton6.Size = new System.Drawing.Size(54, 17);
-            this.radioButton6.TabIndex = 23;
-            this.radioButton6.TabStop = true;
-            this.radioButton6.Text = "1 year";
-            this.radioButton6.UseVisualStyleBackColor = true;
+            this.radio6months.AutoSize = true;
+            this.radio6months.Location = new System.Drawing.Point(439, 188);
+            this.radio6months.Name = "radio6months";
+            this.radio6months.Size = new System.Drawing.Size(68, 17);
+            this.radio6months.TabIndex = 22;
+            this.radio6months.TabStop = true;
+            this.radio6months.Text = "6 months";
+            this.radio6months.UseVisualStyleBackColor = true;
             // 
-            // radioButton5
+            // radio3months
             // 
-            this.radioButton5.AutoSize = true;
-            this.radioButton5.Location = new System.Drawing.Point(439, 188);
-            this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(68, 17);
-            this.radioButton5.TabIndex = 22;
-            this.radioButton5.TabStop = true;
-            this.radioButton5.Text = "6 months";
-            this.radioButton5.UseVisualStyleBackColor = true;
+            this.radio3months.AutoSize = true;
+            this.radio3months.Location = new System.Drawing.Point(439, 156);
+            this.radio3months.Name = "radio3months";
+            this.radio3months.Size = new System.Drawing.Size(68, 17);
+            this.radio3months.TabIndex = 21;
+            this.radio3months.TabStop = true;
+            this.radio3months.Text = "3 months";
+            this.radio3months.UseVisualStyleBackColor = true;
             // 
-            // radioButton4
+            // radio2months
             // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Location = new System.Drawing.Point(439, 156);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(68, 17);
-            this.radioButton4.TabIndex = 21;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "3 months";
-            this.radioButton4.UseVisualStyleBackColor = true;
+            this.radio2months.AutoSize = true;
+            this.radio2months.Location = new System.Drawing.Point(439, 124);
+            this.radio2months.Name = "radio2months";
+            this.radio2months.Size = new System.Drawing.Size(68, 17);
+            this.radio2months.TabIndex = 20;
+            this.radio2months.TabStop = true;
+            this.radio2months.Text = "2 months";
+            this.radio2months.UseVisualStyleBackColor = true;
             // 
-            // radioButton3
+            // radio1month
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(439, 124);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(68, 17);
-            this.radioButton3.TabIndex = 20;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "2 months";
-            this.radioButton3.UseVisualStyleBackColor = true;
-            // 
-            // radioButton2
-            // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(439, 92);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(63, 17);
-            this.radioButton2.TabIndex = 19;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "1 month";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.radio1month.AutoSize = true;
+            this.radio1month.Location = new System.Drawing.Point(439, 92);
+            this.radio1month.Name = "radio1month";
+            this.radio1month.Size = new System.Drawing.Size(63, 17);
+            this.radio1month.TabIndex = 19;
+            this.radio1month.TabStop = true;
+            this.radio1month.Text = "1 month";
+            this.radio1month.UseVisualStyleBackColor = true;
             // 
             // label9
             // 
@@ -186,22 +182,22 @@
             this.label9.TabIndex = 18;
             this.label9.Text = "MEMBERSHIP PLAN";
             // 
-            // radioButton1
+            // radio1week
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(439, 60);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(60, 17);
-            this.radioButton1.TabIndex = 17;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "1 week";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.radio1week.AutoSize = true;
+            this.radio1week.Location = new System.Drawing.Point(439, 60);
+            this.radio1week.Name = "radio1week";
+            this.radio1week.Size = new System.Drawing.Size(60, 17);
+            this.radio1week.TabIndex = 17;
+            this.radio1week.TabStop = true;
+            this.radio1week.Text = "1 week";
+            this.radio1week.UseVisualStyleBackColor = true;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(20, 191);
+            this.label8.Location = new System.Drawing.Point(20, 136);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(46, 17);
             this.label8.TabIndex = 16;
@@ -211,7 +207,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(20, 137);
+            this.label7.Location = new System.Drawing.Point(20, 198);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(64, 17);
             this.label7.TabIndex = 15;
@@ -247,29 +243,29 @@
             this.label4.TabIndex = 12;
             this.label4.Text = "LAST NAME";
             // 
-            // textBox6
+            // txtEmail
             // 
-            this.textBox6.BackColor = System.Drawing.Color.FloralWhite;
-            this.textBox6.Location = new System.Drawing.Point(23, 211);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(372, 20);
-            this.textBox6.TabIndex = 10;
+            this.txtEmail.BackColor = System.Drawing.Color.FloralWhite;
+            this.txtEmail.Location = new System.Drawing.Point(23, 156);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(372, 20);
+            this.txtEmail.TabIndex = 10;
             // 
-            // textBox5
+            // txtAddress
             // 
-            this.textBox5.BackColor = System.Drawing.Color.FloralWhite;
-            this.textBox5.Location = new System.Drawing.Point(23, 157);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(372, 20);
-            this.textBox5.TabIndex = 8;
+            this.txtAddress.BackColor = System.Drawing.Color.FloralWhite;
+            this.txtAddress.Location = new System.Drawing.Point(23, 218);
+            this.txtAddress.Name = "txtAddress";
+            this.txtAddress.Size = new System.Drawing.Size(372, 20);
+            this.txtAddress.TabIndex = 8;
             // 
-            // textBox3
+            // txtContact
             // 
-            this.textBox3.BackColor = System.Drawing.Color.FloralWhite;
-            this.textBox3.Location = new System.Drawing.Point(23, 101);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(183, 20);
-            this.textBox3.TabIndex = 4;
+            this.txtContact.BackColor = System.Drawing.Color.FloralWhite;
+            this.txtContact.Location = new System.Drawing.Point(23, 101);
+            this.txtContact.Name = "txtContact";
+            this.txtContact.Size = new System.Drawing.Size(183, 20);
+            this.txtContact.TabIndex = 4;
             // 
             // label3
             // 
@@ -281,21 +277,21 @@
             this.label3.TabIndex = 2;
             this.label3.Text = "FIRST NAME";
             // 
-            // textBox2
+            // txtLastName
             // 
-            this.textBox2.BackColor = System.Drawing.Color.FloralWhite;
-            this.textBox2.Location = new System.Drawing.Point(212, 47);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(183, 20);
-            this.textBox2.TabIndex = 1;
+            this.txtLastName.BackColor = System.Drawing.Color.FloralWhite;
+            this.txtLastName.Location = new System.Drawing.Point(212, 47);
+            this.txtLastName.Name = "txtLastName";
+            this.txtLastName.Size = new System.Drawing.Size(183, 20);
+            this.txtLastName.TabIndex = 1;
             // 
-            // textBox1
+            // txtFirstName
             // 
-            this.textBox1.BackColor = System.Drawing.Color.FloralWhite;
-            this.textBox1.Location = new System.Drawing.Point(23, 47);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(183, 20);
-            this.textBox1.TabIndex = 0;
+            this.txtFirstName.BackColor = System.Drawing.Color.FloralWhite;
+            this.txtFirstName.Location = new System.Drawing.Point(23, 47);
+            this.txtFirstName.Name = "txtFirstName";
+            this.txtFirstName.Size = new System.Drawing.Size(183, 20);
+            this.txtFirstName.TabIndex = 0;
             // 
             // panel1
             // 
@@ -343,6 +339,14 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "New Member";
             // 
+            // txtBirthday
+            // 
+            this.txtBirthday.BackColor = System.Drawing.Color.FloralWhite;
+            this.txtBirthday.Location = new System.Drawing.Point(215, 101);
+            this.txtBirthday.Name = "txtBirthday";
+            this.txtBirthday.Size = new System.Drawing.Size(183, 20);
+            this.txtBirthday.TabIndex = 24;
+            // 
             // NewMember
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -371,28 +375,28 @@
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.RadioButton radioButton6;
-        private System.Windows.Forms.RadioButton radioButton5;
-        private System.Windows.Forms.RadioButton radioButton4;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton radio1year;
+        private System.Windows.Forms.RadioButton radio6months;
+        private System.Windows.Forms.RadioButton radio3months;
+        private System.Windows.Forms.RadioButton radio2months;
+        private System.Windows.Forms.RadioButton radio1month;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton radio1week;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtEmail;
+        private System.Windows.Forms.TextBox txtAddress;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtLastName;
+        private System.Windows.Forms.TextBox txtFirstName;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.PictureBox Logo;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox txtBirthday;
+        private System.Windows.Forms.TextBox txtContact;
     }
 }
